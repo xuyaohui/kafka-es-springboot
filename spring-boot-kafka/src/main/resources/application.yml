@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  kafka:
+    bootstrap-servers: 192.168.157.64:9092
+    # kafka的配置信息具体参照 KafkaProperties 类
+  consumer:
+    group-id: test
+    # 消费者获取到的偏移量错误时从分区的起始位置读取
+    auto-offset-reset: earliest
+
+diy:
+  elasticsearch:
+    cluster-name: momoes
+    host: 192.168.157.64
+    port: 9200
+    uniqueConnectTimeConfig: true
+    uniqueConnectNumConfig: true
+    schema: http
+    connectTimeOut: 30000
+    socketTimeOut: 30000
+    connectionRequestTimeOut: 5000
+    maxConnectNum: 100
+    maxConnectPerRoute: 100

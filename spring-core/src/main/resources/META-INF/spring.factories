@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.xu.core.config.ESConfig,\
+  com.xu.core.service.impl.EsClientServiceImpl,\
+  com.xu.core.factory.ESClientSpringFactory,\
+  com.xu.core.utils.SpringUtil,\
+  com.xu.core.utils.ElasticSearchUtil
